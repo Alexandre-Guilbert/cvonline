@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/script.js"></script>
+    <link rel="icon" href="/img/favicon img.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Alexandre Guilbert">
+    <meta name="author" content="Alexandre Guilbert">
+    <meta name="keywords" content="Développeur,HTML,CSS,Javascript,Angular">
+    <title>Portfolio de Alexandre Guilbert</title>
+</head>
+<body>
+    <header>
+<h1 id="titres">Mes projets</h1>
+<a id="liens" href="/index.html" >Retourner au CV</a>
+
+
+    </header>
+    <main>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel">
+              <div class="carousel-item">
+                <h2 id="sous-titres">Site Web Jeu de rôles</h2>
+                <img src="/img/img présentation arkanproject.PNG" alt="Site Web jeu de rôles">
+                <a id="liens" href="http://alexandre-guilbert.labo-ve.fr/projectarkan/dev/" target="_blank">lien pour accéder au site web</a>
+              </div>
+              <div class="carousel-item">
+                <img src="project2.png" alt="Project 2">
+                <p>Projet 2: Description brève ici</p>
+              </div>
+              <div class="carousel-item">
+                <img src="project3.png" alt="Project 3">
+                <p>Projet 3: Description brève ici</p>
+              </div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+          </div>          
+    </main>
+    <footer>
+        <p id="form-of-contact">Formulaire de contact</p>
+    <div id="form-style">  
+        <form action="sender.php" method="post"> 
+            <div class="form-group-1">
+                <input type="email"  name="email" placeholder="adresse mail" required>
+            </div>
+            <div class="form-group-2">
+                <input type="nom"  name="nom" placeholder="nom" required>
+            </div>
+            <div class="form-group-3">
+                <input type="prenom"  name="prenom" placeholder="prenom" required>
+            </div>
+            <div class="form-group-4">
+                
+                <textarea id="message" name="message" placeholder="message" rows="5" required></textarea>
+            </div>
+            <button class="form-groupe-5" type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+    </footer>
+</body>
+</html>
